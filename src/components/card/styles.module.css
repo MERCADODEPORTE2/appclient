@@ -8,6 +8,7 @@
   align-items: start;
 
   margin: 2px;
+  position: relative;
 }
 
 .card > a {
@@ -38,5 +39,17 @@
 }
 
 .starts {
-  /* margin-top: -2px; */
+  top: 14em;
+
+  padding: 0 5px;
+  background-color: #101010;
+  position: absolute;
+}
+
+.startsBottom{
+  top: 16em;
+
+  padding: 0 5px;
+  background-color: #101010;
+  position: absolute;
 }

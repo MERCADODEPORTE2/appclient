@@ -11,6 +11,7 @@ const Cards = ({ products }) => {
           name={elem?.name}
           score={elem?.score}
           tags={elem?.tags}
+          category={elem.category}
           img={elem?.image[0]}
           key={elem?.id}
           id={elem?.id}
