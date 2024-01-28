@@ -1,0 +1,553 @@
+.icon {
+  width: 90px;
+  height: 90px;
+
+  z-index: 90000;
+  position: absolute;
+  top: 5px;
+
+  transition: 1s;
+  animation: shake3856 2s linear infinite both;
+}
+
+.icon:hover {
+  animation: shake3856 1s linear infinite both;
+  filter: drop-shadow(0px 0px 5px #f5f5f5ad);
+  transition: 0.5s;
+}
+
+@keyframes shake3856 {
+  0% {
+    -webkit-transform: translate(0);
+    transform: translate(0);
+  }
+
+  20% {
+    -webkit-transform: translate(-5px, 5px);
+    transform: translate(-5px, 5px);
+  }
+
+  40% {
+    -webkit-transform: translate(-2px, -2px);
+    transform: translate(-2px, -2px);
+  }
+
+  60% {
+    -webkit-transform: translate(2px, 2px);
+    transform: translate(2px, 2px);
+  }
+
+  80% {
+    -webkit-transform: translate(10px, -10px);
+    transform: translate(2px, -2px);
+  }
+
+  100% {
+    -webkit-transform: translate(0);
+    transform: translate(0);
+  }
+}
+
+/* +++++++++++++++++++++++++ */
+
+.navBar {
+  height: 4.5em;
+  width: 100%;
+
+  top: 0;
+  position: sticky;
+  z-index: 10000;
+
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+
+  background-color: #101010;
+  color: #f5f5f5;
+}
+
+.rigth {
+  width: 22em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menus {
+  min-width: 11em;
+  display: flex;
+  justify-content: space-between;
+}
+
+.menus .containerButtons {
+  width: auto;
+  height: 4.5em;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+
+.containerButtons div > a {
+  text-decoration: none;
+}
+
+.containerButtons div a > span {
+  color: #f5f5f5;
+  cursor: pointer;
+
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+/* dropDownsButtons */
+
+.principalButton a > span {
+  cursor: pointer;
+  padding-bottom: 0.5em;
+
+  display: flex;
+  align-items: end;
+  z-index: 1000;
+}
+
+.principalButton a > span:hover {
+  border-bottom: 4px solid #ffd904;
+  color: #ffd904;
+}
+
+.principalButton a > p {
+  display: flex;
+  align-items: end;
+  z-index: 1000;
+
+  font-weight: 400;
+  font-size: 16px;
+
+  padding-bottom: 0.5em;
+  cursor: pointer;
+  color: #f5f5f5;
+}
+
+.principalButton a > p:hover {
+  border-bottom: 4px solid #ffd904;
+  color: #ffd904;
+}
+
+.dropDowns {
+  left: 0em;
+  top: 4.5rem;
+  height: 30em;
+  width: 100%;
+
+  position: absolute;
+
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: row;
+
+  background-color: #e7e7e7;
+  z-index: 10000;
+}
+
+.dropDownsButtons {
+  color: #101010;
+  padding: 1em 0;
+  width: 13rem;
+}
+
+.dropDownsButtons a > .title {
+  cursor: pointer;
+  width: auto;
+  border: none;
+  text-decoration: underline;
+
+  font-size: 18px;
+  font-family: "Sarabun", sans-serif;
+  font-weight: 400;
+}
+
+.dropDownsButtons a > .title:hover {
+  background-color: #101010;
+  text-decoration: underline;
+  transition: 0.2s;
+  color: #f5f5f5;
+}
+
+.dropDownsButtons > a {
+  display: flex;
+  justify-content: start;
+
+  text-decoration: underline;
+  font-family: "Sarabun", sans-serif;
+  font-size: 16px;
+
+  margin: 0.5em 0;
+  border: none;
+
+  background-color: transparent;
+  color: #101010;
+  cursor: pointer;
+}
+
+.dropDownsButtons > a:hover {
+  text-decoration: underline;
+}
+
+.dropDownsButtons > img {
+  object-fit: cover;
+}
+
+.rigth > a {
+  background-color: #ffd904;
+
+  border-radius: 50%;
+  width: 1.7em;
+  height: 1.7em;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.burger {
+  display: none;
+}
+
+.center {
+  width: 98%;
+  height: 4.4em;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.buttonBurger {
+  display: none;
+}
+
+.movilMenu {
+  display: none;
+}
+
+.movil {
+  display: none;
+}
+
+@media (max-width: 865px) {
+  .menus {
+    display: none;
+  }
+  .nav {
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: red; */
+  }
+
+  .center {
+    width: 95%;
+    height: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .icon {
+    width: 70px;
+    height: 70px;
+    margin-top: 6px;
+    transition: 1s;
+  }
+
+  .containerFAQS {
+    display: none;
+  }
+
+  .containerButtons {
+    display: none;
+  }
+
+  .rigth {
+    display: none;
+  }
+
+  .movil {
+    width: 4em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .burger {
+    display: flex;
+  }
+
+  .buttonBurger {
+    display: flex;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+  }
+
+  .top {
+    display: flex;
+    justify-content: end;
+    width: 100%;
+  }
+
+  .buttonOut {
+    display: flex;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    padding: 1em 1em 0 0;
+  }
+
+  .movilMenu {
+    right: 0em;
+    top: 0em;
+    height: 98vh;
+    width: 65%;
+
+    position: absolute;
+    padding: 0 5px;
+    overflow: auto;
+    margin-right: -0.5em;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    background-color: #101010;
+    /* background-color: red; */
+    transition: 2s;
+    z-index: 1000;
+
+    transition: width;
+    animation-name: viewMovil;
+    animation-duration: 1s;
+  }
+  @keyframes viewMovil {
+    from {
+      right: -65%;
+    }
+    to {
+      right: 0em;
+    }
+  }
+
+  /* ..................... */
+
+  .dropDownsButtonsMovil {
+    margin: 5px 0;
+    padding-right: 20px;
+
+    display: flex;
+    align-items: end;
+    flex-direction: column;
+    /* background-color: red; */
+  }
+
+  .dropDownsButtonsMovil a > button {
+    font-family: "Sarabun", sans-serif;
+    font-size: 17px;
+    border: none;
+    margin-top: 5px;
+    border-bottom: 3px solid #ffd904;
+
+    color: #f5f5f5;
+    background-color: transparent;
+    cursor: pointer;
+  }
+
+  .dropDownsButtonsMovil > a {
+    text-decoration: none;
+    margin-top: 0.4em;
+
+    color: #f5f5f5;
+  }
+
+  .dropDownsButtonsMovil > a:hover {
+    text-decoration: underline;
+  }
+
+  .options {
+    width: 80%;
+    height: auto;
+
+    display: flex;
+    align-items: end;
+    flex-direction: column;
+
+    margin-top: 1em;
+    overflow: auto;
+  }
+
+  .options > div {
+    /* background-color: green; */
+    width: 100%;
+  }
+
+  .options div > button {
+    width: 95%;
+    height: 3em;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 5px;
+
+    font-size: 18px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+
+    background-color: transparent;
+    border: none;
+    color: #ffd904;
+    cursor: pointer;
+  }
+
+  .options .question > a {
+    text-decoration: none;
+    margin-right: 8px;
+  }
+
+  .options > .question {
+    width: 100%;
+
+    display: flex;
+    justify-content: end;
+    margin: 1.1em 0 1.5em 0;
+
+    text-decoration: none;
+  }
+
+  .options .question > a:hover {
+    border-bottom: 4px solid #ffd904;
+    color: #ffd904;
+  }
+
+  .options a > span {
+    color: #f5f5f5;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+  }
+}
+
+.category {
+  height: auto;
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.category > span {
+  font-family: "Montserrat", sans-serif;
+  color: #f5f5f5;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.category span:hover {
+  border-bottom: 4px solid #ffd904;
+  color: #ffd904;
+}
+
+@media (max-width: 600px) {
+  .icon {
+    margin-left: 5px;
+  }
+  .navBar {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .rigth {
+    display: none;
+  }
+
+  .principalButton {
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+  }
+}
+
+@media (max-width: 570px) {
+  .options {
+    width: 17em;
+
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 490px) {
+  .movilMenu {
+    transition: 2s;
+    width: 80%;
+  }
+  .navBar {
+    height: 3.5em;
+  }
+  .icon {
+    width: 60px;
+    height: 60px;
+    top: 0;
+  }
+}
+
+@media (max-width: 391px) {
+  .movilMenu {
+    width: 100%;
+  }
+  .options {
+    width: 100%;
+    display: flex;
+    align-items: end;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 340px) {
+  .options > .question {
+    width: 100%;
+
+    display: flex;
+    justify-content: end;
+    margin: 1.1em 0 1em 0;
+
+    text-decoration: none;
+  }
+
+  .options .question > a {
+    width: 60%;
+
+    text-decoration: none;
+    margin-right: 7px;
+
+    display: flex;
+    text-align: end;
+  }
+}
+
+@media (max-width: 290px) {
+  .options {
+    font-size: 13px;
+
+    display: flex;
+    align-items: end;
+    flex-direction: column;
+  }
+}
